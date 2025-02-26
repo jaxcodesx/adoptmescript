@@ -1,7 +1,7 @@
 body {
     background-color: #15102c;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Luckiest Guy', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@ body {
 
 h1 {
     color: #ad83f9;
+    font-size: 26px;
 }
 
 textarea {
@@ -33,6 +34,7 @@ textarea {
     font-size: 16px;
     border-radius: 10px;
     resize: none;
+    font-family: Arial, sans-serif; /* Keeping script text normal */
 }
 
 button {
@@ -44,6 +46,7 @@ button {
     cursor: pointer;
     border-radius: 10px;
     margin-top: 10px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 button:hover {
