@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+body {
+  background-color: #1a1a2e;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #2e2e5e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #9d74f5;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 14px;
+  padding: 10px;
+  background: #161627;
+  color: #ffffff;
+  border: 1px solid #7a48c2;
+  border-radius: 5px;
+  resize: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  background: #7a48c2;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Luckiest Guy", cursive; /* Cartoon-style font */
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #9d74f5;
+  transform: scale(1.05);
+}
+
+#copyMessage {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #32cd32;
+}
+
+/* Styling for the note */
+.note {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #cccccc;
+  font-style: italic;
+}
+/* Hides the HTML, CSS, and JS panels */
+#html, #css, #js {
+    display: none !important;
+}
+
+/* Show only the output/console */
+#result {
+    display: block !important;
+}
+
