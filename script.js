@@ -1,9 +1,9 @@
-function copyScript() {
+document.getElementById("copyBtn").addEventListener("click", function() {
     let scriptBox = document.getElementById("scriptBox");
     scriptBox.select();
-    document.execCommand("copy");
-
-    let message = document.getElementById("copyMessage");
-    message.style.display = "block";
-    setTimeout(() => { message.style.display = "none"; }, 2000);
-}
+    navigator.clipboard.writeText(scriptBox.value).then(() => {
+        alert("Script Copied!");
+    }).catch(err => {
+        console.error("Failed to copy text", err);
+    });
+});
