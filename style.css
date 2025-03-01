@@ -58,3 +58,19 @@ button:hover {
     font-size: 14px;
     color: #ccc;
 }
+
+/* Snapchat Section */
+.snapchat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fffc00;
+}
+
+.snapchat img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
