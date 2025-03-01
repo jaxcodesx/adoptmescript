@@ -11,12 +11,13 @@ body {
 
 .container {
     background: #1c1331;
-    padding: 30px; /* Increased padding for more space around */
+    padding: 30px; /* Ensures spacing around the content */
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
     text-align: center;
-    width: 90%; /* Increased width for more symmetry */
-    max-width: 600px; /* Increased max-width for more balance */
+    width: 90%; 
+    max-width: 600px;
+    box-sizing: border-box; /* Prevents width from overflowing */
 }
 
 h1 {
@@ -25,23 +26,24 @@ h1 {
 }
 
 textarea {
-    width: 100%;
-    height: 100px; /* Increased height for a more spacious box */
+    width: calc(100% - 30px); /* Ensures proper spacing inside container */
+    height: 100px;
     background: #2a1e4a;
     color: white;
     border: none;
-    padding: 15px; /* Adjusted padding for symmetry */
+    padding: 15px;
     font-size: 16px;
     border-radius: 10px;
     resize: none;
-    font-family: Arial, sans-serif; /* Keeping script text normal */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Prevents overflow */
 }
 
 button {
     background: #8d6fe2;
     color: white;
     border: none;
-    padding: 12px 25px; /* Slightly larger padding for balance */
+    padding: 12px 25px; /* Balanced padding */
     font-size: 18px;
     cursor: pointer;
     border-radius: 10px;
