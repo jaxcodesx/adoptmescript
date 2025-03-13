@@ -1,23 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Me Freeze Script</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
 <body>
     <div class="container">
         <h1>ADOPT ME FREEZE SCRIPT</h1>
-        <textarea id="scriptBox" readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/jaxcodesx/jaxscriptadoptme/main/amscript", true))()</textarea>
-        <button id="copyButton" onclick="copyScript()">
-            <span class="icon">📄</span> COPY SCRIPT
+        <textarea readonly>
+            your_script_code_here
+        </textarea>
+        <button onclick="copyScript()"> 
+            <img src="copy-icon.png" alt="Copy" width="16" height="16">
+            COPY SCRIPT
         </button>
-        <p class="note">
-            NOTE: WORKS BOTH ON PHONE AND PC EXECUTORS. GO IN-GAME AND PASTE IN EXECUTOR THEN EXECUTE.
-            IF IT DOESN’T WORK, TRY AGAIN OR DM BELOW.
-        </p>
+        <p>WORKS ON PHONE & PC EXECUTORS. PASTE THE SCRIPT IN-GAME. IF IT DOESN’T WORK, TRY AGAIN OR DM BELOW.</p>
         
-        <!-- Added Discord Contact Above Snapchat -->
-        <div class="social">
-            <p>💬 Discord: <span id="discord-username">YourDiscordUsername</span></p>
+        <div class="contact-info">
+            <div class="discord">
+                <img src="discord-icon.png" alt="Discord" width="24">
+                <span>your_discord</span>
+            </div>
+            <div class="snapchat">
+                <img src="snapchat-icon.png" alt="Snapchat" width="24">
+                <span>your_snapchat</span>
+            </div>
         </div>
-        
-        <div class="snapchat">
-            <p>📸 Snapchat: <span id="snapchat-username">your_snapchat</span></p>
-        </div>
-    </div>
-</body>
-</html>
+    </div> 
+</div>
