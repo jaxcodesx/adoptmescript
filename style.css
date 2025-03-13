@@ -1,76 +1,94 @@
 body {
     background-color: #15102c;
     color: #ffffff;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-.container {
-    background: #1c1331;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
     text-align: center;
-    width: 80%;
-    max-width: 500px;
 }
 
+/* Main content container */
+.container {
+    text-align: center;
+    background-color: #e91e63;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+/* Text styling */
 h1 {
-    color: #ad83f9;
     font-size: 26px;
+    color: #ffccff;
 }
 
+/* Script box */
 textarea {
-    width: 100%;
-    height: 80px;
-    background: #2a1e4a;
-    color: white;
-    border: none;
+    width: calc(100% - 20px);
+    height: 100px;
     padding: 10px;
-    font-size: 16px;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: none;
     resize: none;
-    font-family: Arial, sans-serif; /* Keeping script text normal */
+    font-size: 16px;
+    background-color: #2c1a3c;
+    color: #ffb6c1;
+    outline: none;
 }
 
+/* Copy Script Button */
 button {
-    background: #8d6fe2;
-    color: white;
+    background-color: #d147a8;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-family: 'Luckiest Guy', cursive;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #6f55c3;
+    background-color: #9b6eb3;
 }
 
-.note {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #ccc;
+/* Social Media Section */
+.social-links {
+    margin-top: 20px;
+    text-align: center;
 }
 
-/* Snapchat Section */
-.snapchat {
+.snapchat,
+.discord {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.snapchat i,
+.discord i {
+    margin-right: 8px;
+}
+
+.snapchat a,
+.discord {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.snapchat a {
     color: #fffc00;
 }
 
-.snapchat img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+.discord {
+    color: #5865F2;
 }
