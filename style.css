@@ -1,94 +1,63 @@
 body {
-    background-color: #15102c;
-    color: #ffffff;
+    background-color: #1a1a2e;
+    color: white;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     text-align: center;
 }
 
-/* Main content container */
 .container {
     text-align: center;
-    background-color: #e91e63;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
 }
 
-/* Text styling */
-h1 {
-    font-size: 26px;
-    color: #ffccff;
+.script-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* Script box */
-textarea {
-    width: calc(100% - 20px);
-    height: 100px;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    resize: none;
-    font-size: 16px;
-    background-color: #2c1a3c;
-    color: #ffb6c1;
-    outline: none;
-}
-
-/* Copy Script Button */
 button {
-    background-color: #d147a8;
+    background-color: #9b89ff;
+    color: white;
+    padding: 10px;
     border: none;
-    color: #fff;
-    padding: 12px 25px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
     cursor: pointer;
-    border-radius: 8px;
-    margin-top: 15px;
-    transition: background 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #9b6eb3;
+    background-color: #7a5bd8;
 }
 
-/* Social Media Section */
-.social-links {
-    margin-top: 20px;
-    text-align: center;
+.note {
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.snapchat,
-.discord {
+.social-box {
+    margin-top: 10px;
+}
+
+.snapchat {
+    margin-top: 10px;
+}
+
+.discord, .snapchat {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    font-size: 18px;
+    gap: 8px;
+    font-size: 14px;
 }
 
-.snapchat i,
-.discord i {
-    margin-right: 8px;
-}
-
-.snapchat a,
-.discord {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.snapchat a {
-    color: #fffc00;
-}
-
-.discord {
-    color: #5865F2;
+.icon {
+    width: 20px;
+    height: 20px;
 }
