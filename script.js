@@ -1,3 +1,4 @@
+
 document.getElementById("copyBtn").addEventListener("click", function() {
     let scriptBox = document.getElementById("scriptBox");
     scriptBox.select();
